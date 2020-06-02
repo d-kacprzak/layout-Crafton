@@ -133,79 +133,101 @@
                         Nie znalazłeś odpowiedniego kontaktu?
                         <span>Skorzystaj z formularza.</span>
                     </div>
-                    <label for="name">
-                        <input id="name" name="name" type="text" placeholder="Imię">
-                    </label>
-                    <label for="surname">
-                        <input id="surname" name="surname" type="text" placeholder="Nazwisko">
-                    </label>
+                    <div class="form__container">
+                        <label for="name">
+                            <input id="name" name="name" type="text" placeholder="Imię">
+                        </label>
+                        <label for="surname">
+                            <input id="surname" name="surname" type="text" placeholder="Nazwisko">
+                        </label>
+                    </div>
+
                     <label for="email">
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="Adres e-mail">
                     </label>
                     <label for="area">
-                        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+                        <textarea name="area" id="area" placeholder="Treść wiadomości"></textarea>
                     </label>
-                    <label for="agreement">
-                        Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu
-                        ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz
-                        ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach
-                        marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze
-                        mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o
-                        prawie żądania dostępu do moich danych osobowych, ich zmiany oraz
-                        usunięcia.
-                    </label>
-                    <input id="agreement" name="agreement" type="checkbox">
+                    <div class="form__container">
+                        <div class="form__agreement">
+                            <input id="agreement" name="agreement" type="checkbox">
+                            <label for="agreement">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.
+                            </label>
+                        </div>
+                    </div>
                     <input type="submit" value="Wyślij">
                 </form>
 
             </main>
-            <footer>
-               <div>
-                   <p>ul. Głogowska 10
-                       61-719 Poznań
-                       tel. 61 27 11 000
-                   </p>
-                   <div>mapa</div>
-               </div>
-               <div>
-                   <ul>
-                       <li>O nas</li>
-                       <li>Dlaczego CDV</li>
-                       <li>Kadra naukowa</li>
-                       <li>Dla mediów</li>
-                       <li>Kontakt</li>
-                   </ul>
-                   <ul>
-                       <li>Dla kandydata</li>
-                       <li>Poradnik maturzysty</li>
-                       <li>Rekrutacja</li>
-                       <li>Kredyt studencki</li>
-                       <li>Studia dla cudzoziemców</li>
-                   </ul>
-                   <ul>
-                       <li>Dla studenta</li>
-                       <li>Wirtualna Uczelnia</li>
-                       <li>Stypendia</li>
-                       <li>Biuro Karier</li>
-                       <li>Studiuj dalej</li>
-                   </ul>
-                   <ul>
-                       <li>Dla biznesu</li>
-                       <li>Współpraca z biznesem</li>
-                       <li>EmotionsLAB</li>
-                       <li>Wynajem sal</li>
-                       <li>Znajdź pracownika</li>
-                   </ul>
-                   <ul>
-                       <li>Na skróty</li>
-                       <li>Aktualności</li>
-                       <li>Wydarzenia</li>
-                       <li>Konferencje</li>
-                       <li>Blog</li>
-                   </ul>
-               </div>
-                <p>Projekt i realizacja: Crafton</p>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__box">
+                        <div class="footer__box__address">
+                            ul. Głogowska 10 <span>61-719 Poznań</span><span>tel. 61 27 11 000</span>
+
+                        </div>
+                        <div id="map" class="footer__box__map">
+
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <ul class="footer__nav__item">
+                            <li>O nas</li>
+                            <li>Dlaczego CDV</li>
+                            <li>Kadra naukowa</li>
+                            <li>Dla mediów</li>
+                            <li>Kontakt</li>
+                        </ul>
+                        <ul class="footer__nav__item">
+                            <li>Dla kandydata</li>
+                            <li>Poradnik maturzysty</li>
+                            <li>Rekrutacja</li>
+                            <li>Kredyt studencki</li>
+                            <li>Studia dla cudzoziemców</li>
+                        </ul>
+                        <ul class="footer__nav__item">
+                            <li>Dla studenta</li>
+                            <li>Wirtualna Uczelnia</li>
+                            <li>Stypendia</li>
+                            <li>Biuro Karier</li>
+                            <li>Studiuj dalej</li>
+                        </ul>
+                        <ul class="footer__nav__item">
+                            <li>Dla biznesu</li>
+                            <li>Współpraca z biznesem</li>
+                            <li>EmotionsLAB</li>
+                            <li>Wynajem sal</li>
+                            <li>Znajdź pracownika</li>
+                        </ul>
+                        <ul class="footer__nav__item">
+                            <li>Na skróty</li>
+                            <li>Aktualności</li>
+                            <li>Wydarzenia</li>
+                            <li>Konferencje</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <p class="footer__copy">Projekt i realizacja: Crafton</p>
+                </div>
+
             </footer>
         </div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Poznań aleja armii Poznań
+                var poznan = {lat: 52.418969, lng: 16.929084};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 14, center: poznan});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: poznan, map: map});
+            }
+        </script>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp5BvIg6tNA2oBmcrohO_TLMsxqi5MhSU&callback=initMap">
+        </script>
     </body>
 </html>
